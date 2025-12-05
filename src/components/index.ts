@@ -7,3 +7,4 @@ export { StatsPanel } from './StatsPanel';
 export { Leaderboard } from './Leaderboard';
 export { GameContainer } from './GameContainer';
 export { IntroScreen } from './IntroScreen';
+export { InstallPrompt, InstallButton } from './InstallPrompt';

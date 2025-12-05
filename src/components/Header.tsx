@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Trophy, Volume2, VolumeX, Smartphone, Settings } from 'lucide-react';
 import { useGameStore } from '@/store/gameStore';
 import { useState } from 'react';
+import { InstallButton } from './InstallPrompt';
 
 export function Header() {
   const { connected, publicKey } = useWallet();
@@ -43,6 +44,9 @@ export function Header() {
 
         {/* Right Side */}
         <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Install Button */}
+          <InstallButton />
+          
           {/* Points */}
           <div className="flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full border border-yellow-500/30">
             <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-yellow-400" />
